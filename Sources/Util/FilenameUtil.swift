@@ -21,7 +21,7 @@ struct FilenameUtil {
             .joined(separator: "")
 
         if result.count < Int(FILENAME_MAX) {
-            return result
+            return "videoName"
         }
         return "videoName"//String(result[..<result.index(result.startIndex, offsetBy: Int(FILENAME_MAX))])
     }
