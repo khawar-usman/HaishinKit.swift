@@ -15,6 +15,7 @@ struct FilenameUtil {
         invalidCharacters.formUnion(.newlines)
         invalidCharacters.formUnion(.illegalCharacters)
         invalidCharacters.formUnion(.controlCharacters)
+        invalidCharacters.formUnion(.punctuationCharacters)
         result = result
             .components(separatedBy: invalidCharacters)
             .joined(separator: "")
